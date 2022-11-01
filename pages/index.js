@@ -62,10 +62,10 @@ export default function Home() {
               <AiFillLinkedin className="cursor-pointer" />
             </Link>
             <Link href="https://twitter.com/SamirBerrichi1">
-              <AiFillTwitterCircle className="cursor-pointer" />
+              <AiFillTwitterCircle className="cursor-pointer"/>
             </Link>
            <Link href="https://github.com/Sberrich">
-             <AiFillGithub className="cursor-pointer" />          
+             <AiFillGithub className="cursor-pointer"/>          
                 </Link>
             <Link href="https://instagram.com/berrichi_samir">
               <AiFillInstagram className="cursor-pointer" />
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={design} width={100} height={100} alt="design" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Beautiful Designs
               </h3>
@@ -100,7 +100,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={code} width={100} height={100} alt="code" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
               </h3>
@@ -115,7 +115,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">MUI</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image src={consulting} width={100} height={100} alt="consulting" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
