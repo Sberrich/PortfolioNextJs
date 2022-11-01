@@ -80,7 +80,7 @@ export default function Home() {
           <div>
             <h3 className="text-4xl py-1 dark:text-white font-burtons">Welcome</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 md:text-xl"> 
-            My name is <span className="text-cyan-500"> Samir Berrichi </span> , I&apos;m a Front-end developer based in khouribga Morocco, i have been developed many types of front-ends from well know Matcha "Matching and chating app", hypetype "streaming app for watching movies"
+            My name is <span className="text-cyan-500"> Samir Berrichi </span> , I&apos;m a Front-end developer based in khouribga Morocco, i have been developed many types of front-ends from well know Matcha &quot;Matching and chating app&quot;, hypetype &quot;streaming app for watching movies&quot;
             </p>
         
           </div>
