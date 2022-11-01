@@ -40,7 +40,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-cyan-500 text-white dark:bg-gray-900 px-4 py-2 rounded-md ml-8 text-l font-burtons" href="../public/resume.pdf" download>
+                  className="bg-gradient-to-r from-cyan-500 to-cyan-500 text-white dark:bg-gray-900 px-4 py-2 rounded-md ml-8 text-l font-burtons" href="#">
                   Say Hello
                 </a>
               </li>
