@@ -72,7 +72,7 @@ export default function Home() {
             </Link>
           </div>
             <div className="mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-90 md:w-90">
-              <Image src={wave} layout="fill" objectFit="cover" />
+              <Image src={wave} layout="fill" objectFit="cover"  alt="wave"/>
             </div>
           </div>
         </section>
