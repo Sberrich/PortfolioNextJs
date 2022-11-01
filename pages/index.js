@@ -55,7 +55,7 @@ export default function Home() {
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              needs. Join me down below and let&apos;s get cracking!
             </p>
             <div className=" flex justify-center gap-16 py-3 text-gray-600  md:text-5xl  dark:text-gray-200">
             <Link href="https://www.linkedin.com/in/samirberrichi/">
@@ -80,7 +80,7 @@ export default function Home() {
           <div>
             <h3 className="text-4xl py-1 dark:text-white font-burtons">Welcome</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 md:text-xl"> 
-            My name is <span className="text-cyan-500"> Samir Berrichi </span> , I'm a Front-end developer based in khouribga Morocco, i have been developed many types of front-ends from well know Matcha "Matching and chating app", hypetype "streaming app for watching movies"
+            My name is <span className="text-cyan-500"> Samir Berrichi </span> , I&apos;m a Front-end developer based in khouribga Morocco, i have been developed many types of front-ends from well know Matcha "Matching and chating app", hypetype "streaming app for watching movies"
             </p>
         
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Let&apos;s make it a
                 reality.
               </p>
               <h4 className="py-4 text-cyan-600"> I Use</h4>
