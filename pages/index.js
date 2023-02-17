@@ -57,7 +57,7 @@ export default function Home() {
               Freelancer providing services for programming and design content
               needs. Join me down below and let&apos;s get cracking!
             </p>
-            <div className=" flex justify-center gap-16 py-3 text-gray-600  md:text-5xl  dark:text-gray-200">
+            <div className=" flex justify-center gap-8 py-3 text-gray-600  md:text-5xl  dark:text-gray-200">
             <Link href="https://www.linkedin.com/in/samirberrichi/">
               <AiFillLinkedin className="cursor-pointer" />
             </Link>
@@ -71,8 +71,8 @@ export default function Home() {
               <AiFillInstagram className="cursor-pointer" />
             </Link>
           </div>
-            <div className="mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-90 md:w-90">
-              <Image src={wave} layout="fill" objectFit="cover"  alt="wave"/>
+            <div className=" flex justify-center mx-auto bg-gradient-to-b from-cyan-500 rounded-xl w-80 h-80 relative overflow-hidden mt-20 md:h-90 md:w-90">
+              <Image src={wave} width={500} height={500} objectFit="cover" alt="wave"/>
             </div>
           </div>
         </section>
@@ -108,7 +108,7 @@ export default function Home() {
                 Do you have an idea for your next great website? Let&apos;s make it a
                 reality.
               </p>
-              <h4 className="py-4 text-cyan-600"> I Use</h4>
+              <h4 className="py-4 text-cyan-600">I Use</h4>
               <p className="text-gray-800 py-1">React JS</p>
               <p className="text-gray-800 py-1">Next JS </p>
               <p className="text-gray-800 py-1">Tailwind</p>
