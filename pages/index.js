@@ -7,7 +7,8 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import wave from "../public/wave.jpg";
+import wave from "../public/Subject.png";
+import sberrich from "../public/wave4.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -30,7 +31,10 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section >
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
+            <div className="flex justify-between ml-4">
             <h1 className="font-burtons text-xl">sberrich</h1>
+            <Image src={sberrich} width={30} height={30} objectFit="contain" alt="sberrich"/>
+            </div>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -71,12 +75,12 @@ export default function Home() {
               <AiFillInstagram className="cursor-pointer" />
             </Link>
           </div>
-            <div className=" flex justify-center mx-auto bg-gradient-to-b from-cyan-500 rounded-xl w-80 h-80 relative overflow-hidden mt-20 md:h-90 md:w-90">
-              <Image src={wave} width={500} height={500} objectFit="cover" alt="wave"/>
+          <div className=" flex justify-center mx-auto  overflow-hidden  mt-10 md:h-90 md:w-90">
+              <Image src={wave} width={200} height={200} objectFit="contain" alt="wave"/>
             </div>
           </div>
         </section>
-        <section>
+        {/* <section>
           <div>
             <h3 className="text-4xl py-1 dark:text-white font-burtons">Welcome</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 md:text-xl"> 
@@ -123,9 +127,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-        <section className="py-10">
-        </section>
+        </section> */}
+        {/* <section className="py-10">
+        </section> */}
       </main>
     </div>
   );
