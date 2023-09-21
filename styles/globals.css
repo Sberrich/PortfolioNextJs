@@ -25,3 +25,13 @@ a {
   font-family: "burtons";
   src: url('../public/Burtons.otf');
 }
+
+@font-face {
+  font-family: "tahu";
+  src: url("../public/Tahu.ttf");
+}
+@font-face {
+  font-family: "Moranga";
+  src: url("../public/Latinotype\ -\ Moranga\ Regular.otf");
+}
+
