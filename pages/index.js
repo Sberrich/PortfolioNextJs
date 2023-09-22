@@ -1,13 +1,7 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+
 import { BsSun, BsArrowDownCircle } from "react-icons/bs";
 
 import wave from "../public/profile2.png";
@@ -147,7 +141,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
     </div>
   );
