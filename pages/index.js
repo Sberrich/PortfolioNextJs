@@ -1,15 +1,9 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/Link";
 
 import { BsSun, BsArrowDownCircle } from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+
 import wave from "../public/profile2.png";
 import sberrich from "../public/wave4.png";
 
