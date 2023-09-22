@@ -10,12 +10,6 @@ import Subject from "../public/Subject.png";
 import Subject2 from "../public/Subject2.png";
 import consulting from "../public/consulting.png";
 import cardweb from "../public/card-hello-background.webp";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
 
 // Card Component
 const Card = ({ imageSrc, title, subtitle, Desc, children, imgH, imgW }) => (
@@ -85,7 +79,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-gray-200 px-10 dark:bg-gray-900 md:px-20 lg:px-40 duration-300 select-none animate-fade-in">
-      <section>
+        <section>
           <nav className="py-10 mb-12 flex justify-between dark:text-white relative">
             {/* Background Image with Spin Animation */}
             <div className="absolute inset-0 z-[-10] animate-spin">
@@ -93,7 +87,7 @@ export default function Home() {
                 src={cardweb}
                 layout="fill"
                 objectFit="cover"
-                alt="Background Image"
+                alt="background"
               />
             </div>
             <div className="flex ml-4 relative items-center justify-center">
@@ -121,7 +115,7 @@ export default function Home() {
                   <span className="opacity-100">c</span>
                   <span className="opacity-100">h</span>
                   <span className="opacity-100">i</span>
-                  <span className="opacity-100">&rsquo;.</span>
+                  <span className="opacity-100">.</span>
                 </span>
               </div>
             </div>
@@ -145,16 +139,20 @@ export default function Home() {
               imgW={75}
               title={"Hello, I’m"}
               subtitle={"Samir Berrichi."}
-              Desc={"FrontEnd Engineer"}
+              Desc={"FrontEnd Enginer"}
             >
-              <p>
-                Hello! I&rsquo;m a passionate web developer with a love for
-                React.js, Next.js, and Tailwind CSS. With 1 year of frontend
-                development experience, I enjoy solving complex problems and
-                creating impactful solutions. When I&rsquo;m not coding, I
-                explore new technologies, work on side projects, and contribute
-                to open-source communities. Let&rsquo;s connect and build
-                something amazing together!
+              {" "}
+              <p className=" font-Moranga text-md font-semibold ">
+                Also known as sberrich, a self-taught
+                <span className="font-[Moranga] text-2xl font-semibold m-2">
+                  frontend developer
+                </span>
+                originally from Morocco and residing in Khouribga at the moment.
+                Currently available for freelance work or full-time jobs. When
+                I&rsquo;m not coding or designing, I enjoy reading books,
+                playing football, playing video games, or watching movies.
+                Lately, II&rsquo;ve started hitting the gym to build some
+                strength, burn calories, and II&rsquo;m enjoying it so far.
               </p>
             </Card>
             {/* Right Side with Image */}
@@ -173,6 +171,9 @@ export default function Home() {
               imgH={75}
               imgW={75}
             >
+        
+
+
               <p className="py-2">
                 Creating elegant designs suited for your needs following core
                 design theory.
@@ -195,12 +196,12 @@ export default function Home() {
           <div className="lg:flex gap-10 mt-28 dark:text-white">
             <Card imageSrc={Subject2} subtitle="About Me" imgH={75} imgW={75}>
               <p className=" font-Moranga text-md font-semibold ">
-                Hello! I`'`m a passionate web developer with a love for React.js,
+                Hello! I&rsquo;m a passionate web developer with a love for React.js,
                 Next.js, and Tailwind CSS. With 1 year of frontend development
                 experience, I enjoy solving complex problems and creating
-                impactful solutions. When I`'`m not coding, I explore new
+                impactful solutions. When I&rsquo;m not coding, I explore new
                 technologies, work on side projects, and contribute to
-                open-source communities. Let`'`s connect and build something
+                open-source communities. Let&rsquo;s connect and build something
                 amazing together!
               </p>
             </Card>
