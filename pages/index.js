@@ -25,7 +25,7 @@ export default function Home() {
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  }, [languages.length]);
 
   return (
     <div className={`bg-gray-200 ${darkMode ? "dark" : ""}`}>
