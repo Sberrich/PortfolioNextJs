@@ -55,7 +55,7 @@ export default function Home() {
                   <span className="opacity-100">r</span>
                 </span>
                 <Image
-                  src={sberrich}
+                  src={Subject}
                   width={30}
                   height={30}
                   objectFit="contain"
