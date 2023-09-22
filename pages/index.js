@@ -1,16 +1,23 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/Link";
 
 import { BsSun, BsArrowDownCircle } from "react-icons/bs";
-
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillInstagram,
+} from "react-icons/ai";
 import wave from "../public/profile2.png";
 import sberrich from "../public/wave4.png";
-// import signature from "../public/signature.png";
-// import code from "../public/code.png";
-// import design from "../public/design.png";
-// import cardweb from "../public/card-hello-background.webp";
-// import consulting from "../public/consulting.png";
+
+import code from "../public/code.png";
+import design from "../public/design.png";
+import Subject from "../public/Subject.png";
+import cardweb from "../public/card-hello-background.webp";
+import consulting from "../public/consulting.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -53,8 +60,9 @@ export default function Home() {
                   height={30}
                   objectFit="contain"
                   alt="sberrich"
+                  className="animate-pulse"
                 />
-                <span className="text-xl font-bold tracking-wide font-['Tahu']">
+                <span className="text-xl font-bold tracking-wide font-['Tahu'] ">
                   B<span className="opacity-100">e</span>
                   <span className="opacity-100">r</span>
                   <span className="opacity-100">r</span>
@@ -70,11 +78,11 @@ export default function Home() {
               <li>
                 <BsSun
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl ho"
+                  className="cursor-pointer text-2xl animate-pulse"
                 />
               </li>
               <li>
-                <BsArrowDownCircle className="cursor-pointer text-2xl ml-12" />
+                <BsArrowDownCircle className="cursor-pointer text-2xl ml-12 animate-pulse" />
               </li>
             </ul>
           </nav>
@@ -115,13 +123,12 @@ export default function Home() {
                 </span>
                 originally from Morocco and residing in Khouribga at the moment.
                 Currently available for freelance work or full-time jobs. When
-                I&rsquo;m not coding or designing, I enjoy reading books, playing
-                football, playing video games, or watching movies. Lately, II&rsquo;ve
-                started hitting the gym to build some strength, burn calories,
-                and II&rsquo;m enjoying it so far.
+                I&rsquo;m not coding or designing, I enjoy reading books,
+                playing football, playing video games, or watching movies.
+                Lately, II&rsquo;ve started hitting the gym to build some
+                strength, burn calories, and II&rsquo;m enjoying it so far.
               </p>
             </div>
-
             {/* Right Side with Image */}
             <div className="md:w-1/2">
               <div className="hidden md:block">
@@ -137,6 +144,86 @@ export default function Home() {
                   objectFit="contain"
                   alt="wave"
                 />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className=" flex justify-center gap-8 py-3 text-gray-600  md:text-5xl  dark:text-gray-200"></div>
+          <div className="lg:flex gap-10 mt-28">
+            <div className="bg-white dark:bg-primary-black min-w-[300px] rounded-[32px] flex flex-col justify-between relative w-full xl:w-1/2 min-h-[300px] p-[32px] dark:bg-primary-black border-2 dark:bg-gray-800 light-border overflow-hidden ">
+              <div className="flex justify-between max-w-full">
+                <div className="flex flex-row items-center gap-5">
+                  <div className="max-w-fit">
+                    <div className="relative flex items-center justify-center">
+                      <div className="absolute w-[50px] h-[50px] bg-[#b5e3fd]/75 rounded-full flex items-center justify-center blur-md"></div>
+
+                      <Image
+                        src={design}
+                        width={75}
+                        height={75}
+                        decoding="async"
+                        className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium pt-8 pb-2  ">
+                      Beautiful Designs
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-primary-black min-w-[300px] rounded-[32px] flex flex-col justify-between relative w-full xl:w-1/2 min-h-[300px] p-[32px] dark:bg-primary-black border-2 dark:bg-gray-800 light-border overflow-hidden ">
+              <div className="flex justify-between max-w-full">
+                <div className="flex flex-row items-center gap-5">
+                  <div className="max-w-fit">
+                    <div className="relative flex items-center justify-center">
+                      <div className="absolute w-[50px] h-[50px] bg-[#b5e3fd]/75 rounded-full flex items-center justify-center blur-md"></div>
+
+                      <Image
+                        src={code}
+                        width={75}
+                        height={75}
+                        decoding="async"
+                        className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium pt-8 pb-2  ">
+                      Code your dream project
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-primary-black min-w-[300px] rounded-[32px] flex flex-col justify-between relative w-full xl:w-1/2 min-h-[300px] p-[32px] dark:bg-primary-black border-2 dark:bg-gray-800 light-border overflow-hidden ">
+              <div className="flex justify-between max-w-full">
+                <div className="flex flex-row items-center gap-5">
+                  <div className="max-w-fit">
+                    <div className="relative flex items-center justify-center">
+                      <div className="absolute w-[50px] h-[50px] bg-[#b5e3fd]/75 rounded-full flex items-center justify-center blur-md"></div>
+
+                      <Image
+                        src={consulting}
+                        width={75}
+                        height={75}
+                        decoding="async"
+                        className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium pt-8 pb-2  ">
+                      Beautiful Designs
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
