@@ -85,7 +85,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-gray-200 px-10 dark:bg-gray-900 md:px-20 lg:px-40 duration-300 select-none animate-fade-in">
-        <section>
+      <section>
           <nav className="py-10 mb-12 flex justify-between dark:text-white relative">
             {/* Background Image with Spin Animation */}
             <div className="absolute inset-0 z-[-10] animate-spin">
@@ -93,7 +93,7 @@ export default function Home() {
                 src={cardweb}
                 layout="fill"
                 objectFit="cover"
-                alt="background"
+                alt="Background Image"
               />
             </div>
             <div className="flex ml-4 relative items-center justify-center">
@@ -121,7 +121,7 @@ export default function Home() {
                   <span className="opacity-100">c</span>
                   <span className="opacity-100">h</span>
                   <span className="opacity-100">i</span>
-                  <span className="opacity-100">.</span>
+                  <span className="opacity-100">&rsquo;.</span>
                 </span>
               </div>
             </div>
@@ -145,9 +145,8 @@ export default function Home() {
               imgW={75}
               title={"Hello, I’m"}
               subtitle={"Samir Berrichi."}
-              Desc={"FrontEnd Enginer"}
+              Desc={"FrontEnd Engineer"}
             >
-              {" "}
               <p>
                 Hello! I&rsquo;m a passionate web developer with a love for
                 React.js, Next.js, and Tailwind CSS. With 1 year of frontend
