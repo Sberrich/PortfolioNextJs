@@ -35,3 +35,43 @@ a {
   src: url("../public/Latinotype\ -\ Moranga\ Regular.otf");
 }
 
+
+/* animate.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+/* animate.css */
+@keyframes lightBorder {
+  0% {
+    border-color: rgba(255, 255, 255, 0.2); /* Initial border color (light) */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Initial shadow */
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.6); /* Midway border color (a bit darker) */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Midway shadow (a bit stronger) */
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.2); /* Final border color (light) */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Final shadow (same as initial) */
+  }
+}
+
+/* Apply the animation and shadow to an element */
+.light-border {
+  animation: lightBorder 2s linear infinite; /* Customize duration as needed */
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.2); /* Initial border color (light) */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Initial shadow */
+}

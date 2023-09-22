@@ -21,6 +21,10 @@ module.exports = {
           '100%': { transform: 'rotate(360deg)' },
         },
       },
+      borderColor: {
+        'light-black': '#888888', // Replace with your desired lighter black color code
+      },
+    
     },
     
   },
