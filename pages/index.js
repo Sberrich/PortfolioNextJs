@@ -115,10 +115,10 @@ export default function Home() {
                 </span>
                 originally from Morocco and residing in Khouribga at the moment.
                 Currently available for freelance work or full-time jobs. When
-                I’m not coding or designing, I enjoy reading books, playing
-                football, playing video games, or watching movies. Lately, I've
+                I&rsquo;m not coding or designing, I enjoy reading books, playing
+                football, playing video games, or watching movies. Lately, II&rsquo;ve
                 started hitting the gym to build some strength, burn calories,
-                and I’m enjoying it so far.
+                and II&rsquo;m enjoying it so far.
               </p>
             </div>
 
