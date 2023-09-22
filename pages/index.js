@@ -195,12 +195,12 @@ export default function Home() {
           <div className="lg:flex gap-10 mt-28 dark:text-white">
             <Card imageSrc={Subject2} subtitle="About Me" imgH={75} imgW={75}>
               <p className=" font-Moranga text-md font-semibold ">
-                Hello! I'm a passionate web developer with a love for React.js,
+                Hello! I`'`m a passionate web developer with a love for React.js,
                 Next.js, and Tailwind CSS. With 1 year of frontend development
                 experience, I enjoy solving complex problems and creating
-                impactful solutions. When I'm not coding, I explore new
+                impactful solutions. When I`'`m not coding, I explore new
                 technologies, work on side projects, and contribute to
-                open-source communities. Let's connect and build something
+                open-source communities. Let`'`s connect and build something
                 amazing together!
               </p>
             </Card>
