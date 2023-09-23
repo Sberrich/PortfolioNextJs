@@ -74,7 +74,7 @@ const Card = ({
 const LanguageSection = ({ languages, languageIndex }) => (
   <div className="hidden md:block">
     <div>
-      <h2 className="font-tahu text-4xl">{languages[languageIndex]}</h2>
+      <h2 className="font-tahu text-gray-500 text-4xl ">{languages[languageIndex]}</h2>
     </div>
     <Image src={wave} width={700} height={700} objectFit="contain" alt="wave" />
   </div>
