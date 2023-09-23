@@ -75,3 +75,80 @@ a {
   border-color: rgba(255, 255, 255, 0.2); /* Initial border color (light) */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Initial shadow */
 }
+
+
+
+
+/* Define the keyframes for React.js color */
+@keyframes reactBorder {
+  0% {
+    border-color: #61DAFB; /* Initial border color (React.js color) */
+    box-shadow: 0 0 10px rgba(97, 218, 251, 0.3); /* Initial shadow */
+  }
+  50% {
+    border-color: #9baed4; /* Midway border color (a bit darker) */
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.5); /* Midway shadow (a bit stronger) */
+  }
+  100% {
+    border-color: #61DAFB; /* Final border color (React.js color) */
+    box-shadow: 0 0 10px rgba(97, 218, 251, 0.3); /* Final shadow (same as initial) */
+  }
+}
+
+/* Define the keyframes for Spotify color */
+@keyframes spotifyBorder {
+  0% {
+    border-color: #40BEB9; /* Initial border color (Spotify color) */
+    box-shadow: 0 0 10px rgba(29, 185, 84, 0.3); /* Initial shadow */
+  }
+  50% {
+    border-color: #bcf6d0; /* Midway border color (a bit darker) */
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5); /* Midway shadow (a bit stronger) */
+  }
+  100% {
+    border-color: #1BB0BD; /* Final border color (Spotify color) */
+    box-shadow: 0 0 10px rgba(29, 185, 84, 0.3); /* Final shadow (same as initial) */
+  }
+}
+
+/* Define the keyframes for YouTube color */
+@keyframes youtubeBorder {
+  0% {
+    border-color: #DBA992; /* Initial border color (YouTube color) */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Initial shadow */
+  }
+  50% {
+    border-color: #C76338; /* Midway border color (a bit lighter) */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Midway shadow (a bit stronger) */
+  }
+  100% {
+    border-color: #DD9636; /* Final border color (YouTube color) */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Final shadow (same as initial) */
+  }
+}
+
+
+/* Apply the animation and shadow to elements with the respective classes */
+.react-border {
+  animation: reactBorder 2s linear infinite; /* Customize duration as needed */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #61DAFB; /* Initial border color (React.js color) */
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.3); /* Initial shadow */
+}
+
+.spotify-border {
+  animation: spotifyBorder 2s linear infinite; /* Customize duration as needed */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1DB954; /* Initial border color (Spotify color) */
+  box-shadow: 0 0 10px rgba(29, 185, 84, 0.3); /* Initial shadow */
+}
+
+.youtube-border {
+  animation: youtubeBorder 2s linear infinite; /* Customize duration as needed */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FF0000; /* Initial border color (YouTube color) */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Initial shadow */
+}

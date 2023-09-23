@@ -2,6 +2,8 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsSun, BsArrowDownCircle } from "react-icons/bs";
+import { PiFigmaLogoFill } from "react-icons/bi";
+
 import wave from "../public/profile2.png";
 import sberrich from "../public/wave4.png";
 import code from "../public/code.png";
@@ -10,10 +12,24 @@ import Subject from "../public/Subject.png";
 import Subject2 from "../public/Subject2.png";
 import consulting from "../public/consulting.png";
 import cardweb from "../public/card-hello-background.webp";
+import Figma from "../public/assets/figma.png";
+import MyIcon from "../public/figma-svgrepo-com.svg";
+import { motion } from "framer-motion";
 
-// Card Component
-const Card = ({ imageSrc, title, subtitle, Desc, children, imgH, imgW }) => (
-  <div className="bg-white dark:bg-primary-black min-w-[300px] rounded-[32px] flex flex-col justify-between relative w-full xl:w-1/2 min-h-[300px] p-[32px] dark:bg-primary-black border-2 dark:bg-gray-800 light-border overflow-hidden">
+//! Card Component
+const Card = ({
+  imageSrc,
+  title,
+  subtitle,
+  Desc,
+  children,
+  imgH,
+  imgW,
+  borderlights,
+}) => (
+  <div
+    className={`bg-white dark:bg-primary-black min-w-[300px] rounded-[32px] mt-10 flex flex-col justify-between relative w-full xl:w-1/2 min-h-[300px] p-[32px] dark:bg-primary-black border-2 dark:bg-gray-800 overflow-hidden ${borderlights}`}
+  >
     <div className="flex justify-between max-w-full">
       <div className="flex flex-row items-center gap-5">
         <div className="max-w-fit">
@@ -43,13 +59,12 @@ const Card = ({ imageSrc, title, subtitle, Desc, children, imgH, imgW }) => (
     <div>{children}</div>
   </div>
 );
-// LanguageSection Component
+
+//! LanguageSection Component
 const LanguageSection = ({ languages, languageIndex }) => (
   <div className="hidden md:block">
     <div>
-      <h2 className="font-Moranga font-semibold text-2xl">
-        {languages[languageIndex]} ✋
-      </h2>
+      <h2 className="font-tahu text-4xl">{languages[languageIndex]}</h2>
     </div>
     <Image src={wave} width={700} height={700} objectFit="contain" alt="wave" />
   </div>
@@ -58,7 +73,7 @@ const LanguageSection = ({ languages, languageIndex }) => (
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [languageIndex, setLanguageIndex] = useState(0);
-  const languages = ["ⴰⵣⵓⵍ ⴼⵍⴰⵡⵏ", "السلام عليكم", "Bonjour", "Hello"];
+  const languages = ["Hello", "Hola", "Bonjour", "ⴰⵣⵓⵍ ⴼⵍⴰⵡⵏ", "你好", "مرحبا"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -82,14 +97,7 @@ export default function Home() {
         <section>
           <nav className="py-10 mb-12 flex justify-between dark:text-white relative">
             {/* Background Image with Spin Animation */}
-            <div className="absolute inset-0 z-[-10] animate-spin">
-              <Image
-                src={cardweb}
-                layout="fill"
-                objectFit="cover"
-                alt="background"
-              />
-            </div>
+
             <div className="flex ml-4 relative items-center justify-center">
               <div className="absolute bg-[#b5e3fd]/30 w-[130px] h-[20px] blur-md"></div>
               <div className="rounded-full flex items-center justify-between">
@@ -133,6 +141,7 @@ export default function Home() {
           </nav>
           <div className="flex flex-col md:flex-row items-center justify-around dark:text-white">
             {/* Left Side with Four Cards */}
+
             <Card
               imageSrc={sberrich}
               imgH={75}
@@ -140,8 +149,8 @@ export default function Home() {
               title={"Hello, I’m"}
               subtitle={"Samir Berrichi."}
               Desc={"FrontEnd Enginer"}
+              borderlights="light-border"
             >
-              {" "}
               <p className=" font-Moranga text-md font-semibold ">
                 Also known as sberrich, a self-taught
                 <span className="font-[Moranga] text-2xl font-semibold m-2">
@@ -155,6 +164,7 @@ export default function Home() {
                 strength, burn calories, and II&rsquo;m enjoying it so far.
               </p>
             </Card>
+
             {/* Right Side with Image */}
             <LanguageSection
               languages={languages}
@@ -164,53 +174,90 @@ export default function Home() {
         </section>
         <section>
           <div className="flex justify-center text-center gap-8 py-3 text-gray-600 md:text-5xl dark:text-gray-200"></div>
-          <div className="lg:flex gap-10 mt-28 dark:text-white">
+          <div className="lg:flex gap-20 mt-6  dark:text-white">
             <Card
               imageSrc={design}
               subtitle="Beautiful Designs"
               imgH={75}
               imgW={75}
+              borderlights="react-border"
             >
-        
-
-
-              <p className="py-2">
+              <p className="py-2 font-Moranga">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                {/* Your content */}
+              </motion.div>
+              <h4 className="py-4 font-Moranga text-teal-500">
+                Design Tools I Use
+              </h4>
+              <Image
+                src={Figma}
+                width={50}
+                height={50}
+                decoding="async"
+                className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                loading="lazy"
+              />
+              <Image
+                src={Figma}
+                width={50}
+                height={50}
+                decoding="async"
+                className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                loading="lazy"
+              />
+              <Image
+                src={Figma}
+                width={50}
+                height={50}
+                decoding="async"
+                className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                loading="lazy"
+              />
+              <Image
+                src={Figma}
+                width={50}
+                height={50}
+                decoding="async"
+                className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                loading="lazy"
+              />
             </Card>
+
             <Card
               imageSrc={code}
               subtitle="Code your dream project"
               imgH={75}
               imgW={75}
+              borderlights="spotify-border"
             />
             <Card
               imageSrc={consulting}
               subtitle="Consulting Services"
               imgH={75}
               imgW={75}
+              borderlights="youtube-border"
             />
           </div>
           <div className="lg:flex gap-10 mt-28 dark:text-white">
             <Card imageSrc={Subject2} subtitle="About Me" imgH={75} imgW={75}>
               <p className=" font-Moranga text-md font-semibold ">
-                Hello! I&rsquo;m a passionate web developer with a love for React.js,
-                Next.js, and Tailwind CSS. With 1 year of frontend development
-                experience, I enjoy solving complex problems and creating
-                impactful solutions. When I&rsquo;m not coding, I explore new
-                technologies, work on side projects, and contribute to
-                open-source communities. Let&rsquo;s connect and build something
-                amazing together!
+                Hello! I&rsquo;m a passionate web developer with a love for
+                React.js, Next.js, and Tailwind CSS. With 1 year of frontend
+                development experience, I enjoy solving complex problems and
+                creating impactful solutions. When I&rsquo;m not coding, I
+                explore new technologies, work on side projects, and contribute
+                to open-source communities. Let&rsquo;s connect and build
+                something amazing together!
               </p>
             </Card>
-            <Card
-              imageSrc={code}
-              subtitle="Code your dream project"
-              imgH={75}
-              imgW={75}
-            />
+
             <Card
               imageSrc={consulting}
               subtitle="Consulting Services"
@@ -219,6 +266,7 @@ export default function Home() {
             />
           </div>
         </section>
+        <section></section>
       </main>
     </div>
   );
