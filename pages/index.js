@@ -13,8 +13,17 @@ import Subject2 from "../public/Subject2.png";
 import consulting from "../public/consulting.png";
 import cardweb from "../public/card-hello-background.webp";
 import Figma from "../public/assets/figma.png";
-import MyIcon from "../public/figma-svgrepo-com.svg";
-import { motion } from "framer-motion";
+import js from "../public/assets/javascript.png";
+import git from "../public/assets/git.png";
+import typescript from "../public/assets/typescript.png";
+import mu5 from "../public/assets/mu5.png";
+import redux from "../public/assets/redux.png";
+import react from "../public/assets/react.png";
+// import react from "../public/assets/react.png";
+// import tail from "../public/assets/tail.png";
+import belsamiq from "../public/assets/belsamiq.png";
+import ai from "../public/assets/ai.png";
+import canva from "../public/assets/canva.png";
 
 //! Card Component
 const Card = ({
@@ -186,48 +195,44 @@ export default function Home() {
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                {/* Your content */}
-              </motion.div>
+
               <h4 className="py-4 font-Moranga text-teal-500">
                 Design Tools I Use
               </h4>
-              <Image
-                src={Figma}
-                width={50}
-                height={50}
-                decoding="async"
-                className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                loading="lazy"
-              />
-              <Image
-                src={Figma}
-                width={50}
-                height={50}
-                decoding="async"
-                className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                loading="lazy"
-              />
-              <Image
-                src={Figma}
-                width={50}
-                height={50}
-                decoding="async"
-                className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                loading="lazy"
-              />
-              <Image
-                src={Figma}
-                width={50}
-                height={50}
-                decoding="async"
-                className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                loading="lazy"
-              />
+              <div className="flex items-center justify-between m-10">
+                <Image
+                  src={Figma}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={canva}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={ai}
+                  width={70}
+                  height={70}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={belsamiq}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+              </div>
             </Card>
 
             <Card
@@ -236,7 +241,56 @@ export default function Home() {
               imgH={75}
               imgW={75}
               borderlights="spotify-border"
+            >    <div className="flex items-center justify-between m-10">
+            <Image
+              src={js}
+              width={50}
+              height={50}
+              decoding="async"
+              className="w-22 h-22 relative top-[-4px] left-[-2px]"
+              loading="lazy"
             />
+            <Image
+              src={redux}
+              width={50}
+              height={50}
+              decoding="async"
+              className="w-22 h-22 relative top-[-4px] left-[-2px]"
+              loading="lazy"
+            />
+            <Image
+              src={mu5}
+              width={50}
+              height={50}
+              decoding="async"
+              className="w-22 h-22 relative top-[-4px] left-[-2px]"
+              loading="lazy"
+            />
+            <Image
+              src={typescript}
+              width={50}
+              height={50}
+              decoding="async"
+              className="w-22 h-22 relative top-[-4px] left-[-2px]"
+              loading="lazy"
+            />
+            <Image
+              src={git}
+              width={50}
+              height={50}
+              decoding="async"
+              className="w-22 h-22 relative top-[-4px] left-[-2px]"
+              loading="lazy"
+            />
+            <Image
+              src={react}
+              width={50}
+              height={50}
+              decoding="async"
+              className="w-22 h-22 relative top-[-4px] left-[-2px]"
+              loading="lazy"
+            />
+          </div></Card>
             <Card
               imageSrc={consulting}
               subtitle="Consulting Services"
