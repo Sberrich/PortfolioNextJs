@@ -74,7 +74,7 @@ const Card = ({
 const LanguageSection = ({ languages, languageIndex }) => (
   <div className="hidden md:block">
     <div>
-      <h2 className="font-tahu text-gray-500 text-4xl ">{languages[languageIndex]}</h2>
+      <h2 className="font-tahu  text-4xl animate-pulse ">{languages[languageIndex]}</h2>
     </div>
     <Image src={wave} width={700} height={700} objectFit="contain" alt="wave" />
   </div>
@@ -161,7 +161,7 @@ export default function Home() {
               imgW={75}
               title={"Hello, I’m"}
               subtitle={"Samir Berrichi."}
-              Desc={"FrontEnd Enginer"}
+              Desc={"FrontEnd Engineer"}
               borderlights="light-border"
             >
               <p className=" font-Moranga text-md font-semibold ">
@@ -172,9 +172,8 @@ export default function Home() {
                 originally from Morocco and residing in Khouribga at the moment.
                 Currently available for freelance work or full-time jobs. When
                 I&rsquo;m not coding or designing, I enjoy reading books,
-                playing football, playing video games, or watching movies.
-                Lately, II&rsquo;ve started hitting the gym to build some
-                strength, burn calories, and II&rsquo;m enjoying it so far.
+                playing football, video games or watching movies.
+                Lately, II&rsquo;ve started hitting the gym for to componsate for my screen time ,  and II&rsquo;m enjoying it so far.
               </p>
             </Card>
 
