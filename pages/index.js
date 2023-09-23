@@ -24,6 +24,7 @@ import react from "../public/assets/react.png";
 import belsamiq from "../public/assets/belsamiq.png";
 import ai from "../public/assets/ai.png";
 import canva from "../public/assets/canva.png";
+import SplashScreen from "../components/splashpage";
 
 //! Card Component
 const Card = ({
@@ -102,6 +103,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+      <SplashScreen/>
       <main className="bg-gray-200 px-10 dark:bg-gray-900 md:px-20 lg:px-40 duration-300 select-none animate-fade-in">
         <section>
           <nav className="py-10 mb-12 flex justify-between dark:text-white relative">
@@ -148,6 +151,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+      
           <div className="flex flex-col md:flex-row items-center justify-around dark:text-white">
             {/* Left Side with Four Cards */}
 
@@ -200,38 +204,46 @@ export default function Home() {
                 Design Tools I Use
               </h4>
               <div className="flex items-center justify-between m-10">
-                <Image
-                  src={Figma}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={canva}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={ai}
-                  width={70}
-                  height={70}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={belsamiq}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
+                <div className="ball-image">
+                  <Image
+                    src={Figma}
+                    width={50}
+                    height={50}
+                    decoding="async"
+                    className="w-22 h-22"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="ball-image">
+                  <Image
+                    src={canva}
+                    width={50}
+                    height={50}
+                    decoding="async"
+                    className="w-22 h-22"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="ball-image">
+                  <Image
+                    src={ai}
+                    width={70}
+                    height={70}
+                    decoding="async"
+                    className="w-22 h-22"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="ball-image">
+                  <Image
+                    src={belsamiq}
+                    width={50}
+                    height={50}
+                    decoding="async"
+                    className="w-22 h-22"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </Card>
 
@@ -241,56 +253,59 @@ export default function Home() {
               imgH={75}
               imgW={75}
               borderlights="spotify-border"
-            >    <div className="flex items-center justify-between m-10">
-            <Image
-              src={js}
-              width={50}
-              height={50}
-              decoding="async"
-              className="w-22 h-22 relative top-[-4px] left-[-2px]"
-              loading="lazy"
-            />
-            <Image
-              src={redux}
-              width={50}
-              height={50}
-              decoding="async"
-              className="w-22 h-22 relative top-[-4px] left-[-2px]"
-              loading="lazy"
-            />
-            <Image
-              src={mu5}
-              width={50}
-              height={50}
-              decoding="async"
-              className="w-22 h-22 relative top-[-4px] left-[-2px]"
-              loading="lazy"
-            />
-            <Image
-              src={typescript}
-              width={50}
-              height={50}
-              decoding="async"
-              className="w-22 h-22 relative top-[-4px] left-[-2px]"
-              loading="lazy"
-            />
-            <Image
-              src={git}
-              width={50}
-              height={50}
-              decoding="async"
-              className="w-22 h-22 relative top-[-4px] left-[-2px]"
-              loading="lazy"
-            />
-            <Image
-              src={react}
-              width={50}
-              height={50}
-              decoding="async"
-              className="w-22 h-22 relative top-[-4px] left-[-2px]"
-              loading="lazy"
-            />
-          </div></Card>
+            >
+              {" "}
+              <div className="flex items-center justify-between m-10">
+                <Image
+                  src={js}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={redux}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={mu5}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={typescript}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={git}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+                <Image
+                  src={react}
+                  width={50}
+                  height={50}
+                  decoding="async"
+                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
+                  loading="lazy"
+                />
+              </div>
+            </Card>
             <Card
               imageSrc={consulting}
               subtitle="Consulting Services"

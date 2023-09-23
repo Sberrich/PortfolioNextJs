@@ -54,7 +54,7 @@ a {
 /* animate.css */
 @keyframes lightBorder {
   0% {
-    border-color: rgba(255, 255, 255, 0.2); /* Initial border color (light) */
+    border-color: #EFCFB1;/* Initial border color (light) */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Initial shadow */
   }
   50% {
@@ -62,7 +62,7 @@ a {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Midway shadow (a bit stronger) */
   }
   100% {
-    border-color: rgba(255, 255, 255, 0.2); /* Final border color (light) */
+    border-color: #604437; /* Final border color (light) */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Final shadow (same as initial) */
   }
 }
@@ -151,4 +151,23 @@ a {
   border-width: 2px;
   border-color: #FF0000; /* Initial border color (YouTube color) */
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Initial shadow */
+}
+
+
+
+.ball-image {
+  position: relative;
+  perspective: 1000px; /* Adjust the perspective value as needed */
+}
+
+.ball-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transform: rotateY(45deg); /* Adjust the rotation angle as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.ball-image:hover img {
+  transform: rotateY(0deg);
 }
