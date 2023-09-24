@@ -19,8 +19,6 @@ import typescript from "../public/assets/typescript.png";
 import mu5 from "../public/assets/mu5.png";
 import redux from "../public/assets/redux.png";
 import react from "../public/assets/react.png";
-// import react from "../public/assets/react.png";
-// import tail from "../public/assets/tail.png";
 import belsamiq from "../public/assets/belsamiq.png";
 import ai from "../public/assets/ai.png";
 import canva from "../public/assets/canva.png";

@@ -1,84 +1,47 @@
 import React, { useState, useEffect } from "react";
-import imageUrl from "../public/assets/qr.png";
+import Subject from "../public/Subject2.png";
 import Image from "next/image";
-import { useRouter } from "next/router"; // Import the router from Next.js
-import ScrollImg from "../public/assets/scroll.png";
 const SplashScreen = () => {
-  // State to track whether the splash screen should be shown
-  const [showSplash, setShowSplash] = useState(true);
-  const router = useRouter(); // Initialize the router
-  const [showButton, setShowButton] = useState(false);
-  // Function to dismiss the splash screen and navigate to the main content
-
-
- 
-  const handleScroll = () => {
-    if (window.scrollY > 200) {
-      // Adjust the scroll threshold as needed
-      setShowSplash(false);
-      router.push("/"); // Replace "/main-content" with your actual route
-      window.removeEventListener("scroll", handleScroll);
-    }
-  };
-
-  // Add a scroll event listener when the component mounts
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   // Quote text
   const quote = "`Make It Work Make It Right Make It Fast`";
 
   // Author
   const author = "- Kent Beck";
 
-  // Return the splash screen component
+  // State to control the visibility of the splash screen
+  const [showSplash, setShowSplash] = useState(true);
+
+  // Function to hide the splash screen after a delay (e.g., 3 seconds)
+  useEffect(() => {
+    const splashTimeout = setTimeout(() => {
+      setShowSplash(false);
+    }, 3000); // Adjust the delay as needed
+    return () => clearTimeout(splashTimeout);
+  }, []);
+
+  // CSS classes for fade-in and fade-out transitions
+  const splashClass = showSplash ? "fade-in" : "fade-out";
+
   return (
-    showSplash && (
-      <div
-        className="fixed inset-0 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-900 "
-        style={{ zIndex: 9999 }}
-      >
-        {/* Use the <Image> component to display the image */}
-
-        <Image
-          src={imageUrl}
-          alt="Splash Image"
-          width={200} // Set the width of the image as needed
-          height={200} // Set the height of the image as needed
-          className="mb-32 border-gray-400 dark:border-gray-700"
-        />
-
-
-
-        <blockquote className="text-4xl font-Moranga mt-20 text-center text-gray-600 dark:text-gray-400">
-          {quote}
-        </blockquote>
-        <p className="mt-4 font-tahu text-2xl text-gray-500 dark:text-gray-600">
-          {author}
-        </p>
-
-<div className="animate-bounce mt-56">
-
-        <button
-            onClick={handleScroll} // You can use handleScroll to trigger the scroll behavior
-            className="mt-4 text-white font-bold py-2 px-4 rounded-full w-40  light-border"
-          >
-            <Image
-              src={ScrollImg}
-              alt="Scroll Icon"
-              className="h-6 w-6 mr-2" // Set the size of the icon as needed
-            />
-        
-          </button>
-</div>
-        {/* Swipe button to dismiss splash and navigate to main content */}
-     
-      </div>
-    )
+    <div
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-900 ${splashClass}`}
+      style={{ zIndex: 9999 }}
+    >
+      <Image
+        src={Subject}
+        width={100}
+        height={100}
+        objectFit="contain"
+        alt="subject"
+        className=" animate-pulse"
+      />
+      <blockquote className="text-4xl font-Moranga mt-20 text-center text-gray-600 dark:text-gray-400">
+        {quote}
+      </blockquote>
+      <p className="mt-4 font-tahu text-2xl text-gray-500 dark:text-gray-600">
+        {author}
+      </p>
+    </div>
   );
 };
 

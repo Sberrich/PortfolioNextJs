@@ -171,3 +171,14 @@ a {
 .ball-image:hover img {
   transform: rotateY(0deg);
 }
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none; /* Disable interactions during fade-out */
+}
