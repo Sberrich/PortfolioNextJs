@@ -27,14 +27,7 @@ const SplashScreen = () => {
       className={`fixed inset-0 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-900 ${splashClass}`}
       style={{ zIndex: 9999 }}
     >
-      <Image
-        src={Subject}
-        width={100}
-        height={100}
-        objectFit="contain"
-        alt="subject"
-        className=" animate-pulse"
-      />
+    
       <blockquote className="text-4xl font-Moranga mt-20 text-center text-gray-600 dark:text-gray-400">
         {quote}
       </blockquote>

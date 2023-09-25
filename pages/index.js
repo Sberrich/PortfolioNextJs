@@ -2,8 +2,6 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsSun, BsArrowDownCircle } from "react-icons/bs";
-import { PiFigmaLogoFill } from "react-icons/bi";
-
 import wave from "../public/profile2.png";
 import sberrich from "../public/wave4.png";
 import code from "../public/code.png";
@@ -11,7 +9,6 @@ import design from "../public/design.png";
 import Subject from "../public/Subject.png";
 import Subject2 from "../public/Subject2.png";
 import consulting from "../public/consulting.png";
-import cardweb from "../public/card-hello-background.webp";
 import Figma from "../public/assets/figma.png";
 import js from "../public/assets/javascript.png";
 import git from "../public/assets/git.png";
@@ -23,6 +20,7 @@ import belsamiq from "../public/assets/belsamiq.png";
 import ai from "../public/assets/ai.png";
 import canva from "../public/assets/canva.png";
 import SplashScreen from "../components/splashpage";
+import BallCanvas from "../components/BallCanvas";
 
 //! Card Component
 const Card = ({
@@ -72,7 +70,9 @@ const Card = ({
 const LanguageSection = ({ languages, languageIndex }) => (
   <div className="hidden md:block">
     <div>
-      <h2 className="font-tahu  text-4xl animate-pulse ">{languages[languageIndex]}</h2>
+      <h2 className="font-tahu  text-4xl animate-pulse ">
+        {languages[languageIndex]}
+      </h2>
     </div>
     <Image src={wave} width={700} height={700} objectFit="contain" alt="wave" />
   </div>
@@ -101,13 +101,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <SplashScreen/>
+      <SplashScreen />
       <main className="bg-gray-200 px-10 dark:bg-gray-900 md:px-20 lg:px-40 duration-300 select-none animate-fade-in">
         <section>
           <nav className="py-10 mb-12 flex justify-between dark:text-white relative">
-            {/* Background Image with Spin Animation */}
-
             <div className="flex ml-4 relative items-center justify-center">
               <div className="absolute bg-[#b5e3fd]/30 w-[130px] h-[20px] blur-md"></div>
               <div className="rounded-full flex items-center justify-between">
@@ -149,7 +146,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-      
+
           <div className="flex flex-col md:flex-row items-center justify-around dark:text-white">
             {/* Left Side with Four Cards */}
 
@@ -170,8 +167,9 @@ export default function Home() {
                 originally from Morocco and residing in Khouribga at the moment.
                 Currently available for freelance work or full-time jobs. When
                 I&rsquo;m not coding or designing, I enjoy reading books,
-                playing football, video games or watching movies.
-                Lately, II&rsquo;ve started hitting the gym for to componsate for my screen time ,  and II&rsquo;m enjoying it so far.
+                playing football, video games or watching movies. Lately,
+                II&rsquo;ve started hitting the gym for to componsate for my
+                screen time , and II&rsquo;m enjoying it so far.
               </p>
             </Card>
 
@@ -200,46 +198,18 @@ export default function Home() {
               <h4 className="py-4 font-Moranga text-teal-500">
                 Design Tools I Use
               </h4>
-              <div className="flex items-center justify-between m-10">
-                <div className="ball-image">
-                  <Image
-                    src={Figma}
-                    width={50}
-                    height={50}
-                    decoding="async"
-                    className="w-22 h-22"
-                    loading="lazy"
-                  />
+              <div className="flex items-center justify-between">
+                <div>
+                  <BallCanvas icon="/assets/figma.png" />
                 </div>
-                <div className="ball-image">
-                  <Image
-                    src={canva}
-                    width={50}
-                    height={50}
-                    decoding="async"
-                    className="w-22 h-22"
-                    loading="lazy"
-                  />
+                <div>
+                  <BallCanvas icon="/assets/ai.png" />
                 </div>
-                <div className="ball-image">
-                  <Image
-                    src={ai}
-                    width={70}
-                    height={70}
-                    decoding="async"
-                    className="w-22 h-22"
-                    loading="lazy"
-                  />
+                <div>
+                  <BallCanvas icon="/assets/canva.png" />
                 </div>
-                <div className="ball-image">
-                  <Image
-                    src={belsamiq}
-                    width={50}
-                    height={50}
-                    decoding="async"
-                    className="w-22 h-22"
-                    loading="lazy"
-                  />
+                <div>
+                  <BallCanvas icon="/assets/belsamiq.png" />
                 </div>
               </div>
             </Card>
@@ -251,58 +221,40 @@ export default function Home() {
               imgW={75}
               borderlights="spotify-border"
             >
-              {" "}
-              <div className="flex items-center justify-between m-10">
-                <Image
-                  src={js}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={redux}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={mu5}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={typescript}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={git}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
-                <Image
-                  src={react}
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  className="w-22 h-22 relative top-[-4px] left-[-2px]"
-                  loading="lazy"
-                />
+              <div className=" flex flex-wrap justify-center items-center">
+                <div>
+                  <BallCanvas icon="/assets/typescript.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/html.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/css.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/javascript.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/git.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/mu5.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/react.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/tailwind.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/git.png" />
+                </div>
+                <div>
+                  <BallCanvas icon="/assets/mu5.png" />
+                </div>
               </div>
             </Card>
+
             <Card
               imageSrc={consulting}
               subtitle="Consulting Services"
