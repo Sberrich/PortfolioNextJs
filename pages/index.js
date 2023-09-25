@@ -9,7 +9,7 @@ import design from "../public/design.png";
 import Subject from "../public/Subject.png";
 import Subject2 from "../public/Subject2.png";
 import consulting from "../public/consulting.png";
-import Figma from "../public/assets/figma.png";
+// import Figma from "../public/assets/figma.png";
 import js from "../public/assets/javascript.png";
 import git from "../public/assets/git.png";
 import typescript from "../public/assets/typescript.png";
@@ -200,9 +200,9 @@ export default function Home() {
               </h4>
               <div className="flex items-center justify-between">
                 <div>
-                  <BallCanvas icon="/assets/figma.png" />
+                  <BallCanvas icon="/figma.png" />
                 </div>
-                <div>
+                {/* <div>
                   <BallCanvas icon="/assets/ai.png" />
                 </div>
                 <div>
@@ -210,7 +210,7 @@ export default function Home() {
                 </div>
                 <div>
                   <BallCanvas icon="/assets/belsamiq.png" />
-                </div>
+                </div> */}
               </div>
             </Card>
 
@@ -222,7 +222,7 @@ export default function Home() {
               borderlights="spotify-border"
             >
               <div className=" flex flex-wrap justify-center items-center">
-                <div>
+                {/* <div>
                   <BallCanvas icon="/assets/typescript.png" />
                 </div>
                 <div>
@@ -230,7 +230,7 @@ export default function Home() {
                 </div>
                 <div>
                   <BallCanvas icon="/assets/css.png" />
-                </div>
+                </div> */}
                 {/* <div>
                   <BallCanvas icon="/assets/javascript.png" />
                 </div>
