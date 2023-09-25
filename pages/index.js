@@ -231,7 +231,7 @@ export default function Home() {
                 <div>
                   <BallCanvas icon="/assets/css.png" />
                 </div>
-                <div>
+                {/* <div>
                   <BallCanvas icon="/assets/javascript.png" />
                 </div>
                 <div>
@@ -245,13 +245,9 @@ export default function Home() {
                 </div>
                 <div>
                   <BallCanvas icon="/assets/tailwind.png" />
-                </div>
-                <div>
-                  <BallCanvas icon="/assets/git.png" />
-                </div>
-                <div>
-                  <BallCanvas icon="/assets/mu5.png" />
-                </div>
+                </div> */}
+             
+              
               </div>
             </Card>
 
