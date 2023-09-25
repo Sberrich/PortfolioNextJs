@@ -24,8 +24,8 @@ const SplashScreen = () => {
 
   return (
     <div
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-900 ${splashClass}`}
-      style={{ zIndex: 9999 }}
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-900 ${splashClass} z-[9999]`}
+  
     >
     
       <blockquote className="text-4xl font-Moranga mt-20 text-center text-gray-600 dark:text-gray-400">
