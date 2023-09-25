@@ -24,7 +24,7 @@ const SplashScreen = () => {
 
   return (
     <div
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-900 ${splashClass} z-[9999]`}
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-900  z-[9999]`}
   
     >
     
